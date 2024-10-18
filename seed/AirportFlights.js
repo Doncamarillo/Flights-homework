@@ -39,17 +39,17 @@ const flights = [
         flightNumber: 12,
         price: 120,
         numberOfSeats: 186,
-        departingAirport: airport1._code,
-        arrivalAirport: airport3._code,
-        departureDateTime: 1300
+        departingAirport: airport1._id,
+        arrivalAirport: airport3._id,
+        departureDateTime: 130
     },
     {
         airline: "Frontier",
         flightNumber: 4,
         price: 60,
         numberOfSeats: 186,
-        departingAirport: airport3._code,
-        arrivalAirport: airport4._code,
+        departingAirport: airport3._id,
+        arrivalAirport: airport4._id,
         departureDateTime: 600
     }, 
     {
@@ -57,8 +57,8 @@ const flights = [
         flightNumber: 17,
         price: 110,
         numberOfSeats: 160,
-        departingAirport: airport4._code,
-        arrivalAirport: airport1._code,
+        departingAirport: airport4._id,
+        arrivalAirport: airport1._id,
         departureDateTime: 1200
 
     },
@@ -67,8 +67,8 @@ const flights = [
         flightNumber: 12,
         price: 110,
         numberOfSeats: 160,
-        departingAirport: airport4._code,
-        arrivalAirport: airport1._code,
+        departingAirport: airport4._id,
+        arrivalAirport: airport1._id,
         departureDateTime: 1600
 
     },
@@ -77,8 +77,8 @@ const flights = [
         flightNumber: 92,
         price: 110,
         numberOfSeats: 160,
-        departingAirport: airport1._code,
-        arrivalAirport: airport3._code,
+        departingAirport: airport1._id,
+        arrivalAirport: airport3._id,
         departureDateTime: 2000
 
     },
@@ -87,8 +87,8 @@ const flights = [
         flightNumber: 28,
         price: 110,
         numberOfSeats: 160,
-        departingAirport: airport2._code,
-        arrivalAirport: airport1._code,
+        departingAirport: airport2._id,
+        arrivalAirport: airport1._id,
         departureDateTime: 800
 
     },
@@ -97,8 +97,8 @@ const flights = [
         flightNumber: 9,
         price: 110,
         numberOfSeats: 160,
-        departingAirport: airport3._code,
-        arrivalAirport: airport4._code,
+        departingAirport: airport3._id,
+        arrivalAirport: airport4._id,
         departureDateTime: 930
 
     },
@@ -107,12 +107,13 @@ const flights = [
         flightNumber: 8,
         price: 110,
         numberOfSeats: 160,
-        departingAirport: airport4._code,
-        arrivalAirport: airport3._code,
+        departingAirport: airport4._id,
+        arrivalAirport: airport3._id,
         departureDateTime: 1030
 
     },
 ]
+
 
 await Airport.insertMany(airports)
 console.log ('created airport list')
